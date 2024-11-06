@@ -1,0 +1,31 @@
+{
+  "name": "Python 3",
+  "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/coverage-py:2": {}
+  },
+  "postCreateCommand": "pip3 install --user -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "hbenl.vscode-test-explorer",
+        "LittleFoxTeam.vscode-python-test-adapter",
+        "ms-toolsai.jupyter",
+        "ms-python.black-formatter",
+        "njpwerner.autodocstring",
+        "GitHub.classroom",
+        "ms-python.isort",
+        "vscode-icons-team.vscode-icons"
+      ],
+      "settings": {
+        "workbench.editor.closeOnFileDelete": true,
+        "workbench.editor.enablePreview": false,
+        "workbench.iconTheme": "vscode-icons",
+        "workbench.startupEditor": "none",
+        "workbench.statusBar.visible": false,
+        "workbench.tips.enabled": false,
+        "workbench.welcomePage.walkthroughs.openOnInstall": false
+      }
+    }
+  }
+}
