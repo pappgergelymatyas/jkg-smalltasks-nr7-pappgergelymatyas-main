@@ -5,7 +5,7 @@ class TestFindLetterOccurrences:
         assert find_letter_occurrences(["abfg", "Bcd", "Ijk"], "b") == 2  # "abfg" and "Bcd" contain "b"
 
     def test_case_insensitivity(self):
-        assert find_letter_occurrences(["Hello", "world", "Beautiful"], "b") == 2  # "Beautiful" and "world" contain "b" (case-insensitive)
+        assert find_letter_occurrences(["Hello", "world", "Beautiful"], "b") == 1  # "Beautiful" and "world" contain "b" (case-insensitive)
 
     def test_no_occurrences(self):
         assert find_letter_occurrences(["apple", "orange", "grape"], "z") == 0  # None contain "z"
