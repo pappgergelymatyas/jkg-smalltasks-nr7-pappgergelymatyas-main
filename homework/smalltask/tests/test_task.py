@@ -27,3 +27,4 @@ class TestFindLetterOccurrences:
 
     def test_all_strings_contain_letter(self):
         assert find_letter_occurrences(["aaaa", "bbaa", "ab", "a"], "a") == 4  # All strings contain "a"
+#
